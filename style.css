@@ -1,0 +1,50 @@
+.container {
+    max-width: 400px;
+  }
+
+body {
+    background-image: linear-gradient(43deg,
+    #000000 0%,
+    #2f7f9f 46%,
+    #1a3d0d 100%
+    );
+   padding-bottom: 160px;
+}
+
+  input[type=text],
+  input[type=text]:focus {
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+  }
+
+  .todos-container li {
+    background: #484E53;
+  }
+
+  i[data-trash] {
+    cursor: pointer;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .form-check-input {
+    margin: 1px;
+  }
+
+  .todoMarginLeft {
+    overflow:auto
+  }
+
+ .alert {
+    color: rgb(255, 238, 0);
+    text-align: center;
+    font-size: 20px;
+ }
+
+ .form-control::placeholder {
+  color: white
+}

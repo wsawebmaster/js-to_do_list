@@ -1,0 +1,66 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>To-do List | WSA</title>
+</head>
+<body class="bg-dark">
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">To-do List</h1>
+      <form class="form-search">
+        <input class="form-control m-auto" type="text" name="search"
+        placeholder="Filtrar to-do" onkeydown="return (event.keyCode!=13);" autocomplete="off"/>
+      </form>
+    </header>
+
+    <ul class="todos-container list-group mx-auto text-light">
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar NodeJS">
+        <span class='todoMarginLeft'>NodeJS</span>
+        <i class="far fa-trash-alt" data-trash="Estudar NodeJS"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar React">
+        <span class='todoMarginLeft'>React</span>
+        <i class="far fa-trash-alt" data-trash="Estudar React"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar Inglês">
+        <span class='todoMarginLeft'>Inglês</span>
+        <i class="far fa-trash-alt" data-trash="Estudar Inglês"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar JavaScript">
+        <span class='todoMarginLeft'>JavaScript</span>
+        <i class="far fa-trash-alt" data-trash="Estudar JavaScript"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar JavaScript">
+        <span class='todoMarginLeft'>Docker</span>
+        <i class="far fa-trash-alt" data-trash="Estudar JavaScript"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar PHP+Laravel">
+        <span class='todoMarginLeft'>PHP+Laravel</span>
+        <i class="far fa-trash-alt" data-trash="Estudar PHP+Laravel"></i>
+      </li>
+
+      <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center" data-todo="Estudar C#">
+        <span class='todoMarginLeft'>C#</span>
+        <i class="far fa-trash-alt" data-trash="Estudar C#"></i>
+      </li>
+    </ul>
+
+    <form class="form-add-todo text-center my-4">
+      <label class="text-light">Adicionar to-do</label>
+      <input class="form-control m-auto" type="text" name="add" autofocus autocomplete="off" />
+    </form>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
